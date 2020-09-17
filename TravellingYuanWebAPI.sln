@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravellingYuanWebAPI", "TravellingYuanWebAPI.csproj", "{8DC04916-627F-4133-BBC5-5ACC0AFA7BCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DC04916-627F-4133-BBC5-5ACC0AFA7BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC04916-627F-4133-BBC5-5ACC0AFA7BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC04916-627F-4133-BBC5-5ACC0AFA7BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC04916-627F-4133-BBC5-5ACC0AFA7BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3047C85-D651-4C77-BB60-A3D0C5A6BCAF}
+	EndGlobalSection
+EndGlobal

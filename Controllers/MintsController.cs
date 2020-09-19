@@ -10,27 +10,19 @@ namespace TravellingYuanWebAPI.Controllers
 
         public MintsController()
         {
-
+            string connectionString = "server=127.0.0.1;port=3306;user=root;password=Gustavo98;database=tywebapi;sslmode=preferred";
+            dbContext = DbContextFactory.Create(connectionString);
         }
 
         // GET: api/Mints/?code=code returns a Mint model given its code in the URI
         public IHttpActionResult GetMintByCode([FromUri] string code)
         {
-            string connectionString = "server=127.0.0.1;port=3306;user=root;password=Gustavo98;database=tywebapi;sslmode=preferred";
-            dbContext = DbContextFactory.Create(connectionString);
+
             var result = dbContext.Mints.Where(s => s.Mintcode == code).
             Select(e => new { e.Latitude, e.Longitude, e.Location, e.Address, e.Comments, e.Id });
             return Ok(result);
         }
 
-
-        //GET de Prueba 
-
-        public IHttpActionResult Get()
-        {
-            var result= new string[] { "puta", "madre" };
-            return Ok(result);
-        }
 
         // POST: api/Mints
         public void Post([FromBody] string value)

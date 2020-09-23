@@ -23,7 +23,7 @@ namespace TravellingYuanWebAPI.Models
         {
             if (!optionsBuilder.IsConfigured)
             {                
-                optionsBuilder.UseMySql("server=127.0.0.1;port=3306;user=root;password=Gustavo98;database=tywebapi;sslmode=preferred");
+                optionsBuilder.UseMySql("server=travellingeurodb.mysql.database.azure.com;port=3306;user=travellingeuro@travellingeurodb;password=Gustavo98;database=tywebapi;sslmode=preferred");
             } 
         }
 

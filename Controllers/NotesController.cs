@@ -11,10 +11,10 @@ namespace TravellingYuanWebAPI.Controllers
 
         public NotesController()
         {
-            string connectionString = "server=127.0.0.1;port=3306;user=root;password=Gustavo98;database=tywebapi;sslmode=preferred";
+            string connectionString = "server=travellingeurodb.mysql.database.azure.com;port=3306;user=travellingeuro@travellingeurodb;password=Gustavo98;database=tywebapi;sslmode=preferred";
             dbContext = DbContextFactory.Create(connectionString);
         }
-        // GET: api/Notes/serial?=serialnumber returns an Uploads model( given its serial number incluing  the user email and the notes ID
+        // GET: api/Notes/?serial=serialnumber returns an Uploads model( given its serial number incluing  the user email and the notes ID
 
         public IHttpActionResult Get([FromUri] string serial)
         {

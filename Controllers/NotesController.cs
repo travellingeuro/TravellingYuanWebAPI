@@ -56,7 +56,7 @@ namespace TravellingYuanWebAPI.Controllers
         }
         public IHttpActionResult Getchecknote([FromUri] string check) //api/notes/?check=serialnumber return the Id of a note given its serial number
         {
-            var result = dbContext.Notes.Where(s => s.SerialNumber == check).Select(e => new { e.Id });
+            var result = dbContext.Notes.Where(s => s.SerialNumber == check).Select(e => new { e.Id , e.Value});
             if (result != null)
             {
                 return Ok(result);

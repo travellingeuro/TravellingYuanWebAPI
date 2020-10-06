@@ -53,12 +53,12 @@ namespace TravellingYuanWebAPI.Controllers
         public static void SendEmail(string Body, List<string> list)
         {
             MailMessage message = new MailMessage();
-            message.From = new MailAddress("travellingeuro@travellingeuro.com");
+            message.From = new MailAddress("info@travellingyuan.com");
             foreach (var item in list)
             {
                 message.To.Add(item);
             }
-            message.Subject = "Travellingeuro new upload";
+            message.Subject = "TravellingYuan new upload";
             message.IsBodyHtml = true;
 
             message.Body = Body;
@@ -68,7 +68,7 @@ namespace TravellingYuanWebAPI.Controllers
             smtpClient.Host = "217.116.0.228";
             smtpClient.Port = 587;
             smtpClient.EnableSsl = false;
-            smtpClient.Credentials = new System.Net.NetworkCredential("travellingeuro@travellingeuro.com", "Gustavo98");
+            smtpClient.Credentials = new System.Net.NetworkCredential("info@travellingyuan.com", "Gustavo98");
             smtpClient.Send(message);
 
 

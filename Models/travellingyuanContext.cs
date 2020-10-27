@@ -129,6 +129,12 @@ namespace TravellingYuanWebAPI.Models
                     .HasColumnName("comments")
                     .HasColumnType("varchar(250)");
 
+                entity.Property(e => e.Name)
+                     .HasColumnName("name")
+                     .HasColumnType("varchar(250)");
+
+
+
                 entity.Property(e => e.Latitude).HasColumnName("latitude");
 
                 entity.Property(e => e.Location)

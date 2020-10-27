@@ -28,7 +28,7 @@ namespace TravellingYuanWebAPI.Controllers
 
                 var q = result.Id;
                 var qnotes = dbContext.Uploads.Include(u => u.Notes).Include(u => u.Users).
-                    Select(e => new { e.Latitude, e.Longitude, e.Location, e.Address, e.Comments, e.UploadDate, e.NotesId, e.Notes.SerialNumber, e.Notes.Value, e.Users.Email, e.Users.Keepmeinformed }).Where(n => n.NotesId == q);
+                    Select(e => new { e.Latitude, e.Longitude, e.Location, e.Address, e.Comments, e.Name, e.UploadDate, e.NotesId, e.Notes.SerialNumber, e.Notes.Value, e.Users.Email, e.Users.Keepmeinformed }).Where(n => n.NotesId == q);
                 return Ok(qnotes);
             }
         }

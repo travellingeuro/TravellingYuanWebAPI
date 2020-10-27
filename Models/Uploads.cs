@@ -15,6 +15,7 @@ namespace TravellingYuanWebAPI.Models
         public DateTime? UploadDate { get; set; }
         public string Location { get; set; }
         public string Comments { get; set; }
+        public string Name { get; set; }
 
         public Notes Notes { get; set; }
         public Users Users { get; set; }

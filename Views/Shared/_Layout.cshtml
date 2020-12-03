@@ -3,39 +3,71 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/fonts")
+    @Styles.Render("~/Content/fontsawe")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="navbar navbar-light bg-light static-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                </ul>
+                <img alt="logo" src="~/Templates/logo.png" height="100" />
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+
+
+
+    @RenderBody()
+    <hr />
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <h3 class="text-primary"><a href="~/Home/Index">TravellingDollar.com</a></h3>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; TravellingDollar 2019 - @DateTime.Now.Year.ToString(). All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="mailto:info@travellingdollar.com">info@travellingdollar.com</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+
+                        <li class="list-inline-item">
+                            <a href="~/Home/About">About</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="~/Home/Privacy">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
     @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+        var infolinks_pid = 3293513;
+        var infolinks_wsid = 2;
+    </script>
+    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
 </html>

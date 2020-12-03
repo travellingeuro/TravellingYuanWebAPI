@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace TravellingYuanWebAPI
 {
@@ -17,11 +16,20 @@ namespace TravellingYuanWebAPI
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/lib/startbootstrap-landing-page/vendor/bootstrap/js/bootstrap.bundle.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/lib/startbootstrap-landing-page/css/landing-page.css",
+                      "~/lib/startbootstrap-landing-page/vendor/bootstrap/css/bootstrap.css",
+                      "~/lib/startbootstrap-landing-page/vendor/fontawesome-free/css/all.css",
+                      "~/lib/startbootstrap-landing-page/vendor/simple-line-icons/css/simple-line-icons.css"));
+
+            bundles.Add(new StyleBundle("~/Content/fonts").Include(
+                       "~/lib/startbootstrap-landing-page/vendor/simple-line-icons/css/simple-line-icons.min.css", new CssRewriteUrlTransform()));
+
+            bundles.Add(new StyleBundle("~/Content/fontsawe").Include(
+                       "~/lib/startbootstrap-landing-page/vendor/fontawesome-free/css/all.min.css", new CssRewriteUrlTransform()));
         }
     }
 }

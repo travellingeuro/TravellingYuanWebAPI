@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Linq;
 using System.Web.Http;
 using TravellingYuanWebAPI.Models;
 
@@ -21,7 +17,8 @@ namespace TravellingYuanWebAPI.Controllers
 
         public IHttpActionResult Getuserbyemail([FromUri] string email)
         {
-            var result = dbContext.Users.Where(s => s.Email == email).Select(e => new {
+            var result = dbContext.Users.Where(s => s.Email == email).Select(e => new
+            {
                 e.Email,
                 e.EmailConfirmed,
                 e.Id,

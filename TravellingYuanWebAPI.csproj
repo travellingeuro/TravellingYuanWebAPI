@@ -273,6 +273,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ads.txt" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -280,7 +281,6 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
@@ -301,6 +301,54 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\iphone-5537230_1920.jpg" />
+    <Content Include="img\money.jpg" />
+    <Content Include="img\travel.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\css\landing-page.css" />
+    <Content Include="lib\startbootstrap-landing-page\css\landing-page.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\gulpfile.js" />
+    <Content Include="lib\startbootstrap-landing-page\img\bg-masthead.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\img\bg-showcase-1.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\img\bg-showcase-2.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\img\bg-showcase-3.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\img\testimonials-1.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\img\testimonials-2.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\img\testimonials-3.jpg" />
+    <Content Include="lib\startbootstrap-landing-page\index.html" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\all.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\brands.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\brands.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\fontawesome.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\regular.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\regular.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\solid.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\solid.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\v4-shims.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\jquery\jquery.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\jquery\jquery.min.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\jquery\jquery.slim.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -324,6 +372,50 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="libman.json" />
+    <Content Include="lib\startbootstrap-landing-page\.browserslistrc" />
+    <Content Include="lib\startbootstrap-landing-page\LICENSE" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\jquery\jquery.min.map" />
+    <Content Include="lib\startbootstrap-landing-page\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="lib\startbootstrap-landing-page\package.json" />
+    <Content Include="lib\startbootstrap-landing-page\README.md" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_call-to-action.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_footer.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_global.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_icons.scss" />
+    <Content Include="lib\startbootstrap-landing-page\.travis.yml" />
+    <Content Include="lib\startbootstrap-landing-page\scss\landing-page.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_masthead.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_mixins.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_showcase.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_testimonials.scss" />
+    <Content Include="lib\startbootstrap-landing-page\scss\_variables.scss" />
     <None Include="Properties\PublishProfiles\travellingyuanwebapi - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -331,6 +423,10 @@
     <Content Include="Scripts\jquery-3.5.1.slim.js" />
     <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\MyScripts\Initialmap.js" />
+    <Content Include="Scripts\MyScripts\initMap.js" />
+    <Content Include="Scripts\MyScripts\Loadmap.js" />
+    <Content Include="Scripts\MyScripts\Onloadindexpage.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -402,8 +498,10 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Templates\logo.png" />
     <Content Include="Templates\Notification.html" />
     <Content Include="Templates\SVGlogo.png" />
+    <Content Include="favicon.ico" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -428,6 +526,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -470,6 +570,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties content_4bootstrap_1min_1css_1map__JsonSchema="https://json.schemastore.org/tsconfig" content_4bootstrap-grid_1css_1map__JsonSchema="https://json.schemastore.org/sarif-external-property-file-2.1.0-rtm.3.json" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />

@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "startbootstrap-landing-page@5.0.9",
+      "destination": "lib/startbootstrap-landing-page/"
+    }
+  ]
+}

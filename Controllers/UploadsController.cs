@@ -1,9 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using TravellingYuanWebAPI.Models;
 
@@ -19,7 +15,7 @@ namespace TravellingYuanWebAPI.Controllers
             dbContext = DbContextFactory.Create(connectionString);
         }
 
-       
+
 
         // GET: api/Uploads/?email=email returns all the uplaods of email.
         public IHttpActionResult GetbyEmail([FromUri] string email)

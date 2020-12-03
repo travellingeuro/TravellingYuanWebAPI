@@ -1,24 +1,151 @@
-﻿<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+﻿@*header*@
+<header class="masthead text-black-50 text-center">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                @*Spinner*@
+                <div class="d-flex justify-content-center">
+                    <div id='loader' class="spinner-border text-primary" style="width: 10rem; height: 10rem; display:none" role="status">
+
+                    </div>
+                </div>
+                <h1 class="mb-5">Try inserting the serial number of a Yuan bill</h1>
+            </div>
+
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0">
+                            <input id="serialinput" class="form-control form-control-lg" placeholder="the long number in the front...">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button id="trybutton" onclick="initMap()" type="button" class="btn btn-block btn-lg btn-primary">Try!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+</header>
+
+<section class="mb-4">
+    <div class="col-md-12 mb-4">
+        <!--Card-->
+        <div class="card">
+            <!--Card content-->
+            <div class="card-body text-center">
+                <!--Google map-->
+                <div id="mapa" class="z-depth-1" style="height: 400px"></div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+</section>
+
+@*badges *@
+<section class="testimonials text-center bg-light">
+    <div class="container">
+        <h2 id="bill_message" class="mb-5">Get the app</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <a href='https://play.google.com/store/apps/details?id=com.travelling.travellingeuro&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                    <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style='width: 310px; object-position: 18px -17px;'>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a href='https://apps.apple.com/us/app/travellingeuro/id1511015537?itsct=apps_box&amp;itscg=30200' style='display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;'><img src='https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1589155200&h=7baf411acf21a6aee0a1e5a7e083481c' alt='Download on the App Store' style='border-radius: 13px; width: 250px; height: 83px;'></a>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+@*light info*@
+<section class="features-icons  text-center" style="background-color:#f1f1fc">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="fa fa-building m-auto text-primary "></i>
+                    </div>
+                    <h3>Where was it issued</h3>
+                    <p class="lead mb-0">Check which Federal Reserve issued your bill</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="fa fa-money-bill-alt m-auto text-primary"></i>
+                    </div>
+                    <h3>What was it used for</h3>
+                    <p class="lead mb-0">Check the comments about your bill</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-globe m-auto text-primary"></i>
+                    </div>
+                    <h3>Where has it been</h3>
+                    <p class="lead mb-0">Track the places where you bill has been before</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*more info*@
+<!-- Image Showcases -->
+<section class="showcase">
+    <div class="container-fluid p-3" style="background-color: #fcf1f1">
+        <div class="row no-gutters ">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../img/money.jpg');"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Upload a Dollar bill</h2>
+                <p class="lead mb-0">You can upload a new bill into the system. Get the app and enter the serial number, location, comments. After submitting a note you can later track this bill along the States.</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('../../img/travel.jpg');"></div>
+            <div class="col-lg-6 my-auto showcase-text" style="padding-left:1rem">
+                <h2>Track a Dollar bill</h2>
+                <p class="lead mb-0">Track here or with the app. Just type in the long green number -serial number stamped by the side of the President. You can follow its path along all the states that have the dollar as its currency.</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../img/iphone-5537230_1920.jpg');"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Get notified</h2>
+                <p class="lead mb-0">Every time somebody else enters a bill that you have previously uploaded, we will send you an email.!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+@section scripts {
+
+
+    <script src="~/Scripts/MyScripts/Onloadindexpage.js">
+
+    </script>
+
+    <script src="~/Scripts/MyScripts/initMap.js">
+
+    </script>
+
+    <script src="~/Scripts/MyScripts/Loadmap.js">
+
+
+    </script>
+
+    <script src="~/Scripts/MyScripts/Initialmap.js">
+
+    </script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcseBCwLCjVSz2BFkHsq22HvSYqcr4mjg&k&libraries=places&callback=Initialmap"></script>
+
+}

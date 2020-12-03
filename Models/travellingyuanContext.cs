@@ -22,9 +22,9 @@ namespace TravellingYuanWebAPI.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-            {                
+            {
                 optionsBuilder.UseMySql("server=travellingeurodb.mysql.database.azure.com;port=3306;user=travellingeuro@travellingeurodb;password=Gustavo98;database=tywebapi;sslmode=preferred");
-            } 
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

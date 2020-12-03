@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace TravellingYuanWebAPI.Controllers
 {
@@ -12,6 +8,18 @@ namespace TravellingYuanWebAPI.Controllers
         {
             ViewBag.Title = "Home Page";
 
+            return View();
+        }
+
+        public ActionResult Privacy()
+        {
+            ViewBag.Title = "TravellingDollar - Privacy Policy";
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            ViewBag.Title = "TravellingDollar - About";
             return View();
         }
     }

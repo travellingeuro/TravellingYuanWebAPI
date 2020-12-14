@@ -5,6 +5,7 @@ google.com, pub-4299156005397946, RESELLER, f08c47fec0942fa0
 google.com, pub-7858377917172490, RESELLER, f08c47fec0942fa0
 rubiconproject.com, 20322, RESELLER, 0bfd66d529a55807
 Pubmatic.com, 60809,RESELLER,5d62403b186f2ace
+yahoo.com, 57403, RESELLER
 Adtech.com, 11409, RESELLER
 Advertising.com, 6202, RESELLER
 Advertising.com, 17744, RESELLER

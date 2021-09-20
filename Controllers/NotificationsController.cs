@@ -65,7 +65,7 @@ namespace TravellingYuanWebAPI.Controllers
             smtpClient.Host = "217.116.0.228";
             smtpClient.Port = 587;
             smtpClient.EnableSsl = false;
-            smtpClient.Credentials = new System.Net.NetworkCredential("info@travellingyuan.com", "Gustavo98");
+            smtpClient.Credentials = new System.Net.NetworkCredential("info@travellingyuan.com", "Aristoteles19");
             smtpClient.Send(message);
 
 

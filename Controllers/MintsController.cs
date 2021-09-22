@@ -10,7 +10,7 @@ namespace TravellingYuanWebAPI.Controllers
 
         public MintsController()
         {
-            string connectionString = "server=travellingeurodb.mysql.database.azure.com;port=3306;user=travellingeuro@travellingeurodb;password=Gustavo98;database=tywebapi;sslmode=preferred";
+            string connectionString = "server=travellingeurodb.mysql.database.azure.com;port=3306;user=travellingeuro@travellingeurodb;password=*******;database=tywebapi;sslmode=preferred";
             dbContext = DbContextFactory.Create(connectionString);
         }
 
